@@ -1,0 +1,36 @@
+.color-picker {
+  text-align: center;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.color-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.color-item {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.color-item.focused {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 4px #333;
+}
+
+.color-code {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
